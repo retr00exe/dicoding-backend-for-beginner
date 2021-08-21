@@ -1,0 +1,30 @@
+{
+	"name": "bookshelf-api",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./src/server.js",
+	"scripts": {
+		"start": "node ./src/server.js",
+		"dev": "set NODE_ENV=development&& nodemon ./src/server.js",
+		"prod": "set NODE_ENV=production&& node ./src/server.js",
+		"lint": "eslint ./src",
+		"check": "prettier -c .",
+		"format": "prettier -w ."
+	},
+	"engines": {
+		"node": "12.x"
+	},
+	"keywords": [],
+	"author": "Mekel Ilyasa (github.com/retr00exe)",
+	"license": "MIT",
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-plugin-import": "^2.24.1",
+		"nodemon": "^2.0.12"
+	},
+	"dependencies": {
+		"@hapi/hapi": "^20.1.5",
+		"nanoid": "^3.1.25"
+	}
+}
